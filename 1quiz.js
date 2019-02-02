@@ -24,6 +24,12 @@ class Question {
     }
 }
 
+class Carrera{
+    constructor(name){
+
+    }
+}
+
 var q1 = new Question('¿Te gusta trabajar con personas?')
 allQuestions.push(q1)
 
@@ -36,8 +42,23 @@ allQuestions.push(q3)
 var q4 = new Question('¿Te gusta leer?')
 allQuestions.push(q4)
 
+var q5 = new Question('¿Te gusta escribir?')
+allQuestions.push(q5)
+
+var q5 = new Question('¿Te gusta dibujar?')
+allQuestions.push(q5)
+
+var q5 = new Question('¿Te gusta leer noticias?')
+allQuestions.push(q5)
+
 allQuestions.forEach(element => {
     element.ask()
 });
 
-console.log(allQuestions)
+var graphicDesign = (q2.answer * 0.5 + q5.answer * 0.5) * 20
+var softwareDevelloper = (q2.answer * 0.5 + q4.answer * 0.5) * 20
+
+
+// console.log(allQuestions)
+console.log(`Tienes una afinidad con Diseño Gráfico de ${graphicDesign} puntos`)
+console.log(`Tienes una afinidad con Desarrollo de Software de ${softwareDevelloper} puntos`)
