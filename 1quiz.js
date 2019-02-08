@@ -65,6 +65,6 @@ var quiz = function() {
     console.log(`Tienes una afinidad con Desarrollo de Software de ${softwareDevelloper} puntos`)
 }
 
-quiz()
+// quiz()
 
 
