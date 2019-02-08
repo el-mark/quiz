@@ -30,14 +30,14 @@ class Carrera{
     }
 }
 
-var q1 = new Question('¿Te gusta trabajar con personas?')
-allQuestions.push(q1)
+// var q1 = new Question('¿Te gusta trabajar con personas?')
+// allQuestions.push(q1)
 
 var q2 = new Question('¿Te gusta trabajar en la computadora?')
 allQuestions.push(q2)
 
-var q3 = new Question('¿Te gusta estar en movimiento?')
-allQuestions.push(q3)
+// var q3 = new Question('¿Te gusta estar en movimiento?')
+// allQuestions.push(q3)
 
 var q4 = new Question('¿Te gusta leer?')
 allQuestions.push(q4)
@@ -45,20 +45,26 @@ allQuestions.push(q4)
 var q5 = new Question('¿Te gusta escribir?')
 allQuestions.push(q5)
 
-var q5 = new Question('¿Te gusta dibujar?')
-allQuestions.push(q5)
+// var q6 = new Question('¿Te gusta dibujar?')
+// allQuestions.push(q6)
 
-var q5 = new Question('¿Te gusta leer noticias?')
-allQuestions.push(q5)
-
-allQuestions.forEach(element => {
-    element.ask()
-});
-
-var graphicDesign = (q2.answer * 0.5 + q5.answer * 0.5) * 20
-var softwareDevelloper = (q2.answer * 0.5 + q4.answer * 0.5) * 20
+// var q7 = new Question('¿Te gusta leer noticias?')
+// allQuestions.push(q7)
 
 
-// console.log(allQuestions)
-console.log(`Tienes una afinidad con Diseño Gráfico de ${graphicDesign} puntos`)
-console.log(`Tienes una afinidad con Desarrollo de Software de ${softwareDevelloper} puntos`)
+var quiz = function() {
+    allQuestions.forEach(element => {
+        element.ask()
+    });
+
+    var graphicDesign = (q2.answer * 0.5 + q5.answer * 0.5) * 20
+    var softwareDevelloper = (q2.answer * 0.5 + q4.answer * 0.5) * 20
+
+    // console.log(allQuestions)
+    console.log(`Tienes una afinidad con Diseño Gráfico de ${graphicDesign} puntos`)
+    console.log(`Tienes una afinidad con Desarrollo de Software de ${softwareDevelloper} puntos`)
+}
+
+quiz()
+
+
